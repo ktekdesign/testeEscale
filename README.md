@@ -10,6 +10,7 @@ Requirements
   * PHP 7.2.9 or higher;
   * PDO-SQLite PHP extension enabled;
   * and the [usual Symfony application requirements][2].
+  * Docker
 
 Installation
 ------------
@@ -34,8 +35,9 @@ There's no need to configure anything to run the application. If you have
 [installed Symfony][4] binary, run this command:
 
 ```bash
-$ cd my_project/
-$ symfony serve
+$ cd testeEscale/docker
+$ docker-compose build
+$ docker-compose up -d
 ```
 
 Then access the application in your browser at the given URL (<https://localhost:8000> by default).
